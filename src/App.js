@@ -82,6 +82,12 @@ class App extends React.Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl:this.state.input});
+    app.models
+    .predict(
+      Clarifai.FACE_DETECT_MODEL,
+      this.state.input)
+    .then(response => {
+      if (response) {
       fetch('https://immense-savannah-14570.herokuapp.com/imageurl',{
         method:'post',
         headers:{'Content-Type': 'application/json'},
