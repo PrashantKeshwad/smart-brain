@@ -32,7 +32,7 @@ class Register extends React.Component {
     onSubmitSignIn = () => {
         fetch('https://smart-brain-pdk.herokuapp.com/register', {
             method:'post',
-            headers:{'Content-Type': 'application/json'},
+            headers:{'Content-Type': 'application/json','Accept': 'application/json'},
             body: JSON.stringify({
                 email: this.state.email,
                 password: this.state.password,
