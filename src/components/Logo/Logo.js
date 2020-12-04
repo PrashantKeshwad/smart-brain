@@ -11,7 +11,8 @@ const Logo = () => {
                     <img style={{paddingTop: '2px'}} alt='logo' src={brain}/> 
                 </div>
             </Tilt>
-        </div>        );
+        </div>       
+    );
 }
 
 export default Logo;
