@@ -84,7 +84,7 @@ class App extends React.Component {
     this.setState({imageUrl:this.state.input});
       fetch('https://smart-brain-pdk.herokuapp.com/imageurl',{
         method:'post',
-        headers:{'Content-Type': 'application/json'},
+        headers:{'Content-Type': 'application/json', 'Accept': 'application/json'},
         body: JSON.stringify({
             input: this.state.input
         })
@@ -94,7 +94,7 @@ class App extends React.Component {
         if (response){
           fetch('https://smart-brain-pdk.herokuapp.com/image',{
             method:'put',
-            headers:{'Content-Type': 'application/json'},
+            headers:{'Content-Type': 'application/json', 'Accept': 'application/json'},
             body: JSON.stringify({
                 id: this.state.user.id
             })
