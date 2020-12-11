@@ -48,8 +48,12 @@ class Register extends React.Component {
                 this.props.loadUser(user)
                 this.props.onRouteChange('home');
               }
-            })    
+            })   
+
+            console.log(this.response);
+            console.log(this.user.id);
         }
+
 
     render(){
         return (

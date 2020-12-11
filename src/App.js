@@ -122,9 +122,6 @@ class App extends React.Component {
   }
 
   render(){
-
-    console.log(this.response);
-
     const {isSignedIn, imageUrl, route, box} = this.state;
     return (
       <div className="App">
