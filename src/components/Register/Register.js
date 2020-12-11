@@ -50,8 +50,8 @@ class Register extends React.Component {
               }
             })   
 
-            console.log(this.response);
-            console.log(this.user.id);
+            // console.log(this.response);
+            console.log(this.user);
         }
 
 
