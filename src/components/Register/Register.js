@@ -30,7 +30,7 @@ class Register extends React.Component {
     }
 
     onSubmitSignIn = () => {
-        fetch('https://smart-brain-pdk.herokuapp.com/register', {
+        fetch('http://localhost:3000/register', {
             method: 'post',
             headers: { 
                 'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ class Register extends React.Component {
             })   
 
             // console.log(this.response);
-            console.log(this.user);
+            // console.log(this.user);
         }
 
 
