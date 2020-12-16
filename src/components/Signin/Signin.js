@@ -26,6 +26,8 @@ class Signin extends React.Component {
             password: this.state.signInPassword
         })
     })
+    console.log(this.response)
+
       .then(response => response.json())
       .then(user => {
         if (user.id) {
@@ -34,7 +36,6 @@ class Signin extends React.Component {
         }
       })
 
-      console.log(this.response);
 
   }
 
