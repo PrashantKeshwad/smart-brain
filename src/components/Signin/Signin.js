@@ -21,7 +21,6 @@ class Signin extends React.Component {
     fetch('https://secure-dusk-17812.herokuapp.com/signin', {
         method:'post',
         headers:{'Content-Type': 'application/json'},
-        
         body: JSON.stringify({
             email: this.state.signInEmail,
             password: this.state.signInPassword
@@ -34,6 +33,9 @@ class Signin extends React.Component {
           this.props.onRouteChange('home');
         }
       })
+
+      console.log(this.response);
+
   }
 
     render (){
